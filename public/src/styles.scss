@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$hunter-primary: mat-palette($mat-blue-gray);
+$hunter-accent:  mat-palette($mat-red, 800, A100, A700);
+$hunter-warn:    mat-palette($mat-yellow);
+
+$hunter-theme: mat-dark-theme($hunter-primary, $hunter-accent, $hunter-warn);
+
+@include angular-material-theme($hunter-theme);

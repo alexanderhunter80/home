@@ -23,8 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/hunter.scss"
+              "src/styles.scss"
             ],
             "scripts": []
           },
