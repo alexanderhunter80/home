@@ -1,4 +1,28 @@
-<app-test-dashboard></app-test-dashboard>
+<div class="fixed-bar">
+    <mat-toolbar color="primary">
+        <div class="header-flex">
+            <div class="header-item">
+                <a [routerLink]="['/splash']">
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="header-item">
+                <a [routerLink]="['/resume']">
+                    <p>Resume</p>
+                </a>
+            </div>
+            <div class="header-item">
+                <a [routerLink]="['/testdashboard']">
+                    <p>TestDash</p>
+                </a>
+            </div>
+        </div>
+    </mat-toolbar>
+</div>
 
+<div class="container">    
 
-<!-- <router-outlet></router-outlet> -->
+    <router-outlet></router-outlet>
+
+</div>
+

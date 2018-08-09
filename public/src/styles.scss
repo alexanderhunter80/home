@@ -4,7 +4,40 @@
 
 @include mat-core();
 
-$hunter-primary: mat-palette($mat-blue-gray);
+$hunter-red: (
+    50: #fbe8ec,
+    100: #f5c7cd,
+    200: #df9092,
+    300: #cf6569,
+    400: #d64246,
+    500: #d72d2d,
+    600: #c9232c,
+    700: #b81926,
+    800: #ab1020,
+    900: #9c0014,
+    A100: #ffc8cf,
+    A200: #f79093,
+    A400: #fa3442,
+    A700: #de001e,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$hunter-primary: mat-palette($hunter-red, 900);
 $hunter-accent:  mat-palette($mat-red, 800, A100, A700);
 $hunter-warn:    mat-palette($mat-yellow);
 
