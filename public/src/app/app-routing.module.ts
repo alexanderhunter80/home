@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'resume', component: ResumeComponent },
   { path: 'testdashboard', component: TestDashboardComponent},
   { path: '', pathMatch: 'full', redirectTo: '/splash' },
+  { path: 'home', pathMatch: 'full', redirectTo: '/splash' },
   { path: '**', redirectTo: '/splash' }
 ];
 
