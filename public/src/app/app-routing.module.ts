@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'splash', component: SplashComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'testdashboard', component: TestDashboardComponent},
-  { path: '', pathMatch: 'full', redirectTo: '/splash' }
+  { path: '', pathMatch: 'full', redirectTo: '/splash' },
+  { path: '**', redirectTo: '/splash' }
 ];
 
 @NgModule({
