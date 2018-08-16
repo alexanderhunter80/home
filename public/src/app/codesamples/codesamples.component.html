@@ -1,0 +1,70 @@
+<div class="container">
+  <mat-tab-group dynamicHeight="true">
+
+    <mat-tab label="Introduction">
+        <p>Recently, I spent some time flexing my Java skills by implementing a variety of data structures and comparing their performance on some basic operations.</p>
+        <p>Together with <a href="https://github.com/proconsular">Chris Luttio</a>, I built naive implementations of multiple such structures in Java.  Then, from a hopefully-even playing field, we ran these structures through several test cases, gathering data on their time and memory performance through a small benchmarking service that I wrote for this project.</p>
+        <p>The tabs included here are the structures that I personally implemented - I have omitted those where Chris did the majority of the work.  Where I used or adapted code from other sources, I have included references to the original source in the comments.</p>
+        <p><i>If you are interested in the results of our testing, that is available in a <a href="https://github.com/alexanderhunter80/data-structures">Github repository</a>, both as <a href="https://github.com/alexanderhunter80/data-structures/raw/master/documents/dataA.ods">raw data</a> and as a <a href="https://github.com/alexanderhunter80/data-structures/raw/master/documents/pres.odp">LibreOffice Impress presentation</a>.</i></p>
+    </mat-tab>
+
+    <mat-tab label="Array">
+      <pre>{{codeArray}}</pre>
+    </mat-tab>
+
+    <mat-tab label="Lists">
+      <mat-tab-group dynamicHeight="true">
+        <mat-tab label="Singly Linked List">
+          <pre>{{codeSLL}}</pre>
+        </mat-tab>
+        <mat-tab label="Doubly Linked List">
+          <pre>{{codeDLL}}</pre>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-tab>
+
+    <mat-tab label="Hash Tables">
+      <mat-tab-group dynamicHeight="true">
+        <mat-tab label="Chaining">
+          <pre>{{codeHashChain}}</pre>
+        </mat-tab>
+        <mat-tab label="Linear Open-Address">
+          <pre>{{codeHashLinear}}</pre>
+        </mat-tab>
+        <mat-tab label="Periodic Open-Address">
+            <pre>{{codeHashPeriodic}}</pre>
+        </mat-tab>        
+        <mat-tab label="Quadratic Open-Address">
+            <pre>{{codeHashQuadratic}}</pre>
+        </mat-tab>
+        <mat-tab label="Hash Function">
+            <pre>{{codeHasher}}</pre>
+        </mat-tab>        
+      </mat-tab-group>
+    </mat-tab>
+
+    <mat-tab label="Heap">
+        <pre>{{codeHeap}}</pre>
+    </mat-tab>
+
+    <mat-tab label="Trie">
+        <pre>{{codeTrie}}</pre>
+    </mat-tab>
+
+    <mat-tab label="Trees">
+      <mat-tab-group dynamicHeight="true">
+        <mat-tab label="Binary Search Tree">
+            <pre>{{codeBST}}</pre>
+        </mat-tab>
+        <mat-tab label="AVL Tree">
+            <pre>{{codeAVL}}</pre>
+        </mat-tab>
+        <mat-tab label="Red-Black Tree">
+            <pre>{{codeRedBlack}}</pre>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-tab>
+
+
+  </mat-tab-group>
+</div>

@@ -12,7 +12,12 @@
                 </a>
             </div>
             <div class="header-item">
-                <a [routerLink]="['/testdashboard']">
+                <a [routerLink]="['/codesamples']">
+                    <p>Code Samples</p>
+                </a>
+            </div>
+            <div class="header-item">
+                <a [routerLink]="['/contact']">
                     <p>Contact</p>
                 </a>
             </div>
@@ -21,8 +26,8 @@
 </div>
 
 <div class="container">    
-
-    <router-outlet></router-outlet>
-
+    <div>
+        <router-outlet #o="outlet"></router-outlet>
+    </div>
 </div>
 

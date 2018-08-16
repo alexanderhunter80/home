@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointState, BreakpointObserver } from '@angular/cdk/layout';
+// import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-test-dashboard',
   templateUrl: './test-dashboard.component.html',
-  styleUrls: ['./test-dashboard.component.css']
+  styleUrls: ['./test-dashboard.component.css'],
 })
 export class TestDashboardComponent {
   /** Based on the screen size, switch from standard to one column per row */

@@ -1,0 +1,9 @@
+.container {
+    width: 100%;
+}
+
+pre {
+    background: #202020;
+    color: #90E0E0;
+    padding: 2%;
+}
